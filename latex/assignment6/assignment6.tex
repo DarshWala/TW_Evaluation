@@ -1,0 +1,66 @@
+﻿% Note: This file requires XeLaTeX for fontspec.
+% For pdfLaTeX, remove fontspec lines and use standard fonts.
+\documentclass[12pt, a4paper]{article}
+\usepackage{xcolor}
+\usepackage{makeidx}
+\usepackage{amsmath}
+\usepackage{geometry}
+% \usepackage{fontspec}  % Uncomment for XeLaTeX
+
+\geometry{margin=1in}
+\makeindex
+
+% Alphabetic section numbering
+\renewcommand{\thesection}{\Alph{section}}
+
+\begin{document}
+
+% \pagecolor{yellow!10}  % Uncomment to set background color
+
+\section{Fonts and Background}
+\index{background}
+% With XeLaTeX + fontspec:
+% \setmainfont{DejaVu Serif}
+% \setsansfont{DejaVu Sans}
+% \setmonofont{Courier New}
+
+This text uses the default main font.
+{\sffamily This text uses the sans-serif font.}
+{\ttfamily This text uses the monospace font.}
+
+\section{Spacing}
+
+This is the first line of a paragraph.\\
+This is another line, but not another paragraph.
+
+\vspace{1cm}
+This paragraph starts 1cm below.
+
+{\sloppy This is another paragraph. Incomprehensibilities and antidisestablishmentarianisms are two long words.}
+
+\newpage
+
+\section{Numbering}
+\index{numbering}
+\begin{equation}
+    x^2 + y^2 = 1
+\end{equation}
+
+\section{Boxes and Lines}
+\index{savebox}
+
+\newsavebox{\mybox}
+\savebox{\mybox}{This message is written in a savebox.}
+
+\usebox{\mybox}\\
+\usebox{\mybox}\\
+\usebox{\mybox}
+
+\parbox{5cm}{This text is wrapped in a 5cm paragraph box.}
+
+\printindex
+
+\bibliography{refs}
+\bibliographystyle{plain}
+
+\end{document}

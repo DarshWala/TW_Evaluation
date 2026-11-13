@@ -1,0 +1,64 @@
+﻿\documentclass[12pt, a4paper]{article}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{colortbl}
+
+\begin{document}
+
+\tableofcontents
+
+\section{Introduction}
+This document demonstrates various table features in \LaTeX{}.
+
+\section{Basic Table}
+
+\begin{tabular}{|l|l|l|}
+\hline
+Animal & Food & Size \\
+\hline
+Dog & Meat & Medium \\
+Horse & Hay & Large \\
+Frog & Flies & Small \\
+\hline
+\end{tabular}
+
+\section{Table with Multicolumn}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|}
+\hline
+\multicolumn{3}{|c|}{Sales Report} \\
+\hline
+Product & Region & Sales \\
+\hline
+Laptop & East & 120 \\
+Mouse & West & 80 \\
+\hline
+\end{tabular}
+\caption{Sales data using multicolumn}
+\end{table}
+
+\section{Table with Multirow}
+
+\begin{tabular}{|l|l|l|}
+\hline
+Team & Member & Role \\
+\hline
+\multirow{2}{*}{Dev} & Alice & Developer \\
+ & Bob & Tester \\
+\hline
+\end{tabular}
+
+\section{Colored Table}
+
+\begin{tabular}{|l|c|c|c|}
+\hline
+\rowcolor{gray!30} Department & Budget & Spent & Remaining \\
+\hline
+Engineering & 500 & 320 & 180 \\
+\rowcolor{yellow!20} Marketing & 300 & 250 & 50 \\
+\hline
+\end{tabular}
+
+\end{document}

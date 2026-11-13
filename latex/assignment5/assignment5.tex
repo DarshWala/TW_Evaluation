@@ -1,0 +1,60 @@
+﻿\documentclass[12pt, a4paper]{report}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+
+\geometry{margin=1in}
+
+\chapterfont{\color{red}\huge\bfseries}
+\sectionfont{\color{magenta}\large\itshape}
+\subsectionfont{\color{orange}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Your Name}
+\chead{Introduction to LaTeX}
+\rhead{\today}
+\cfoot{\thepage}
+
+\title{{\Huge \textbf{Introduction to LaTeX}}}
+\author{{\Large Your Name} \\ Your ID}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\begin{abstract}
+This document is a brief introduction to \LaTeX{}. It covers the report document class,
+chapters, custom heading styles, page headers and footers, and other formatting features.
+\end{abstract}
+
+\tableofcontents
+
+\chapter{Introduction}
+\LaTeX{} is a typesetting system widely used in academia for producing high-quality documents.
+
+\section{Why LaTeX?}
+\LaTeX{} is especially useful for documents with complex mathematics, structured formatting,
+and consistent styling across large documents.
+
+\subsection{Use Cases}
+\begin{itemize}
+    \item Research papers
+    \item Theses and dissertations
+    \item Technical reports
+\end{itemize}
+
+\chapter{Mathematics in LaTeX}
+\LaTeX{} provides powerful tools for typesetting equations.
+
+\section{Equations}
+The quadratic formula is:
+\begin{equation}
+    x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\end{equation}
+
+\end{document}

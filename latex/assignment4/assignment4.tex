@@ -1,0 +1,58 @@
+﻿\documentclass[12pt, a4paper]{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{amsmath}
+
+\definecolor{myblue}{RGB}{0, 70, 200}
+\colorlet{mymix}{red!60!yellow}
+
+\begin{document}
+
+\tableofcontents
+
+\section{Lists}
+
+Technologies for formatting content:
+\begin{itemize}
+    \item \LaTeX{}
+    \item HTML + CSS
+    \item Markdown
+\end{itemize}
+
+Scenarios where \LaTeX{} is used:
+\begin{enumerate}
+    \item Writing research papers
+    \item Embedding math equations in other software
+    \item Creating CVs and project reports
+\end{enumerate}
+
+\section{Colors}
+
+This text is in {\color{myblue} custom blue}.
+This equation uses a mix color: \textcolor{mymix}{$T(n) = aT(n/b) + f(n)$}
+
+\section{Figures}
+
+% Uncomment and provide image files to test:
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=0.3\textwidth, angle=90]{logo.png}
+%     \caption{Rotated logo}
+% \end{figure}
+
+% Side-by-side images using minipage
+% \begin{minipage}{0.45\textwidth}
+%     \centering
+%     \includegraphics[width=\textwidth]{img1.png}
+%     Figure A
+% \end{minipage}
+% \hfill
+% \begin{minipage}{0.45\textwidth}
+%     \centering
+%     \includegraphics[width=\textwidth]{img2.png}
+%     Figure B
+% \end{minipage}
+
+\end{document}
